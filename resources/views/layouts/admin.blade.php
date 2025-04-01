@@ -93,7 +93,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="pages/ui-components/alerts.html" class="nav-link">Subcategory</a>
+                    <a href="{{ route('category.trash.list') }}" class="nav-link">Category Trash</a>
                   </li>
               </ul>
             </div>
@@ -529,6 +529,7 @@
   <!-- custom js for this page -->
   <script src="{{asset('backend')}}/assets/js/dashboard.js"></script>
   <script src="{{asset('backend')}}/assets/js/datepicker.js"></script>
+  @yield('footer_script')
 	<!-- end custom js for this page -->
 </body>
 </html>

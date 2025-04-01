@@ -42,4 +42,9 @@ Route::get('/category/create', [CategoryController::class,'category_create'])->n
 Route::post('/category/store', [CategoryController::class,'category_store'])->name('category.store');
 Route::get('/category/edit/{id}', [CategoryController::class,'category_edit'])->name('category.edit');
 Route::post('/category/update/{id}', [CategoryController::class,'category_update'])->name('category.update');
-Route::get('/category/delete/{id}', [CategoryController::class,'category_delete'])->name('category.delete');
+Route::get('/category/soft/delete/{id}', [CategoryController::class,'category_soft_delete'])->name('category.soft.delete');
+Route::get('/category/trash/list', [CategoryController::class,'category_trash_list'])->name('category.trash.list');
+Route::get('/category/restore/{id}', [CategoryController::class,'category_restore'])->name('category.restore');
+Route::get('/category/permanent/delete/{id}', [CategoryController::class,'category_permanent_delete'])->name('category.permanent.delete');
+Route::post('/category/ceheck/delete', [CategoryController::class,'category_check_delete'])->name('category.check.delete');
+Route::post('/category/bulk/action', [CategoryController::class,'category_bulk_action'])->name('category.bulk.action');
