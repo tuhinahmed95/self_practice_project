@@ -131,4 +131,6 @@ class CategoryController extends Controller
             return back()->with('check_delete', 'Category Checked All Delete!');
         }
     }
+
+   
 }

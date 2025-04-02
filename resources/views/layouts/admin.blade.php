@@ -89,12 +89,28 @@
             <div class="collapse" id="uiComponents">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="{{ route('category.list') }}" class="nav-link">Category</a>
+                  <a href="{{ route('category.list') }}" class="nav-link">Category List</a>
                 </li>
 
                 <li class="nav-item">
                     <a href="{{ route('category.trash.list') }}" class="nav-link">Category Trash</a>
-                  </li>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('subcategory.list') }}" class="nav-link">SubCategory List</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('subcategory.trash.list') }}" class="nav-link">SubCategory Trash</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('brand.list') }}" class="nav-link">Brand List</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('brand.trash.list') }}" class="nav-link">Brand Trash</a>
+                </li>
               </ul>
             </div>
           </li>
