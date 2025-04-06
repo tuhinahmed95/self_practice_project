@@ -36,7 +36,7 @@
                             </td>
 
                             <td class="d-flex">
-                                <a title="inventory" href="" class="btn btn-info mr-1"><i class="fas fa-warehouse"></i></a>
+                                <a title="inventory" href="{{ route('inventory.create',$product->id) }}" class="btn btn-info mr-1"><i class="fas fa-warehouse"></i></a>
                                 <a title="single product view" href="" class="btn btn-primary mr-1"><i data-feather="eye"></i></a>
                                 <a href="" class="btn btn-warning mr-1"><i data-feather="edit"></i></a>
                                 <a href="" class="btn btn-danger del_btn" ><i data-feather="trash"></i></a>

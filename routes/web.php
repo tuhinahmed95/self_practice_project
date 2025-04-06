@@ -4,6 +4,7 @@ use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\InventoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SubcategoryController;
@@ -100,3 +101,10 @@ Route::get('/size/list', [VariationController::class,'size_list'])->name('size.l
 Route::get('/size/create', [VariationController::class,'size_create'])->name('size.create');
 Route::post('/size/store', [VariationController::class,'size_store'])->name('size.store');
 Route::get('/size/delete/{id}', [VariationController::class,'size_delete'])->name('size.delete');
+
+
+// Inventory
+Route::get('/inventory/list', [InventoryController::class,'inventory_list'])->name('inventory.list');
+Route::get('/inventory/create/{id}', [InventoryController::class,'inventory_create'])->name('inventory.create');
+Route::post('/inventory/store/{id}', [InventoryController::class,'inventory_store'])->name('inventory.store');
+Route::get('/inventory/delete/{id}', [InventoryController::class,'inventory_delete'])->name('inventory.delete');
